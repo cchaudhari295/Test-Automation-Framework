@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "emailAddress": "logag61737@jameagle.com",
+      "password": "password"
+    },
+    {
+      "emailAddress": "binibe4521@advitize.com",
+      "password": "password"
+    },
+	 {
+      "emailAddress": "testinvalid@gmail.com",
+      "password": "password"
+    }
+  ]
+}
