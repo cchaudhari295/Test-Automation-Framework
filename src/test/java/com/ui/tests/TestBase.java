@@ -53,7 +53,7 @@ public class TestBase {
 		if (isLambdaTest) {
 			LambdaTestUtility.quitSession();
 		} else {
-		//	homePage.quit();
+			homePage.quit();
 		}
 	}
 }

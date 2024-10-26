@@ -20,7 +20,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import com.constants.Browser;
 
 public abstract class BrowserUtility {
-	protected static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	Logger logger = LoggerUtility.getLogger(this.getClass());
 
 	public BrowserUtility(WebDriver driver) {
@@ -126,6 +126,10 @@ public abstract class BrowserUtility {
 			e.printStackTrace();
 		}
 		return path;
+	}
+	
+	public void quit() {
+		driver.get().quit();
 	}
 
 }
