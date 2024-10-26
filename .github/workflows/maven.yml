@@ -1,0 +1,77 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-maven
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Java CI with Maven
+
+on:
+  schedule:
+  - cron: 00 18 * * * 
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+    - name: Running Test Automation Framework with Maven
+      run: mvn test -Dbrwoser=chrome -DisLambdaTest=true -DisHeadless=false-X
+
+    - name: Upload Test Logs
+      if: always()
+      uses: actions/upload-artifact@v4.4.3
+      with: 
+        name: Test logs
+        path: logs/
+
+    - name: Upload Screenshots as Artifacts
+      if: always()
+      uses: actions/upload-artifact@v4.4.3
+      with: 
+        name: screenshots
+        path: screenshots/
+        
+    - name: Upload HTML Report as Artifact
+      if: always()
+      uses: actions/upload-artifact@v4.4.3
+      with: 
+        name: html-report
+        path: report.html
+
+    - name: Test Execution Status
+      if: always()
+      run: echo "Test Execution Completed"
+
+    - name: Copy Report to Github pages folder
+      if: always()
+      run: mkdir -p public/extent-reports
+        cp -R report.html public/extent-reports/
+        cp -R screenshots/ public/extent-reports/screenshots/
+        ls-l
+
+    - name: Deploy to github pages
+      if: always()
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: public/extent-reports/
+        token: ${{secrets.PAT}}
+        clean: true
+      
+      
+
+    
