@@ -113,12 +113,12 @@ public abstract class BrowserUtility {
 	}
 
 	public String takeScreenshot(String name) {
-		TakesScreenshot screenshot = (TakesScreenshot) driver;
+		TakesScreenshot screenshot = (TakesScreenshot) driver.get();
 		Date date = new Date();
 		SimpleDateFormat format = new SimpleDateFormat("HH-mm-ss");
 		String timeStamp = format.format(date);
 		File screenshotData = screenshot.getScreenshotAs(OutputType.FILE); // get data in file format
-		String path = System.getProperty("user.dir") + "//screenshot//" + name + " - " + timeStamp + ".png";
+		String path = "./screenshot/" + name + " - " + timeStamp + ".png";
 		File screenshotFile = new File(path);
 		try {
 			FileUtils.copyFile(screenshotData, screenshotFile);
