@@ -7,10 +7,6 @@
     {
       "emailAddress": "binibe4521@advitize.com",
       "password": "password"
-    },
-	 {
-      "emailAddress": "testinvalid@gmail.com",
-      "password": "password"
     }
   ]
 }

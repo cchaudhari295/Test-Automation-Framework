@@ -14,7 +14,7 @@ import com.ui.pages.MyAccountPage;
 public class SearchProductTest extends TestBase {
 
 	private MyAccountPage myAccountPage;
-	private static final String SEARCH_TERM="Printer Summer Dress";
+	private static final String SEARCH_TERM="Printed Summer Dress";
 
 	@BeforeMethod(description="Valid user logs into the application")
 	public void setUp() {
