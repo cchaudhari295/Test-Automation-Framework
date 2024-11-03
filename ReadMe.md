@@ -20,6 +20,9 @@ Hi, My Name is Chaitali and I have 6 years of experience in Automation Testing u
 
 ## 🔗 Links
 
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/cchaudhari295)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chaitali-chaudhari-a2b850177/)
 
 
 
@@ -100,3 +103,4 @@ The tests will be executed at 11:30PM IST every single day.
 
 The reports will be archieved in gh-pages branch
 You can view the html reports at : 
+https://cchaudhari295.github.io/Test-Automation-Framework/report.html 
