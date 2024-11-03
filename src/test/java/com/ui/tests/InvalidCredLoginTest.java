@@ -5,8 +5,6 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.ui.pojo.UserDetails;
-
 @Listeners(com.ui.listeners.TestListener.class)
 public class InvalidCredLoginTest extends TestBase{
 

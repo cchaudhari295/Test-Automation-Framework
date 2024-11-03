@@ -1,16 +1,11 @@
 package com.ui.tests;
 
-import static com.constants.Browser.CHROME;
 import static org.testng.Assert.assertEquals;
 
-import org.apache.logging.log4j.Logger;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.ui.pages.HomePage;
 import com.ui.pojo.UserDetails;
-import com.utility.LoggerUtility;
 
 
 @Listeners(com.ui.listeners.TestListener.class)
