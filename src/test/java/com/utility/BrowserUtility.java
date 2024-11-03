@@ -42,7 +42,6 @@ public abstract class BrowserUtility {
 		if (browserName.equalsIgnoreCase("chrome")) {
 			driver.set(new ChromeDriver());
 			wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
-			System.out.println(driver);
 		}
 
 		else if (browserName.equalsIgnoreCase("edge")) {

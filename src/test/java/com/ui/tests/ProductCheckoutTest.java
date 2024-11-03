@@ -4,10 +4,12 @@ import static com.ui.pages.Size.L;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ui.pages.SearchResultPage;
 
+@Listeners(com.ui.listeners.TestListener.class)
 public class ProductCheckoutTest extends TestBase{
     private SearchResultPage searchResultPage;
     private static final String SEARCH_TERM="Printed Summer Dress";

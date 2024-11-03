@@ -3,11 +3,13 @@ package com.ui.tests;
 import org.testng.Assert;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.ui.pages.MyAccountPage;
 import com.ui.pojo.AddressPOJO;
 import com.utility.FakeAddressUtility;
 
+@Listeners(com.ui.listeners.TestListener.class)
 public class AddNewAddressTest extends TestBase{
 
 	private MyAccountPage myAccountPage;
