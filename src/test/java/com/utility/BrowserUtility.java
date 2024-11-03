@@ -116,37 +116,47 @@ public abstract class BrowserUtility {
 	}
 
 	public void clickOn(By locator) {
+		logger.info("Finding Element with the locator" + locator);
 		//WebElement element = driver.get().findElement(locator);
 		WebElement element=wait.until(ExpectedConditions.elementToBeClickable(locator));
+		logger.info("Element Found and now performing Click");
 		element.click();
 	}
 	
 	public void clickOnCheckbox(By locator) {
+		logger.info("Finding Element with the locator" + locator);
 		//WebElement element = driver.get().findElement(locator);
 		WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		logger.info("Element Found and now performing Click");
 		element.click();
 	}
 
 
 	public void clickOn(WebElement element) {
-
+		logger.info("Element Found and now performing Click");
 		element.click();
 	}
 
 	public void enterText(By locator, String value) {
+		logger.info("Finding Element with the locator" + locator);
 		//WebElement element = driver.get().findElement(locator);
 		WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		logger.info("Element Found and now enter text " + locator);
 		element.sendKeys(value);
 	}
 
 	public void clearText(By locator) {
+		logger.info("Finding Element with the locator" + locator);
 		WebElement element = driver.get().findElement(locator);
+		logger.info("Element Found and clearing the text box field");
 		element.clear();
 	}
 
 	public void enterSpecialKeys(By locator, Keys keyToEnter) {
+		logger.info("Finding Element with the locator" + locator);
 		//WebElement element = driver.get().findElement(locator);
 		WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		logger.info("Element Found and now enter text " + locator);
 		element.sendKeys(keyToEnter);
 	}
 
@@ -159,16 +169,21 @@ public abstract class BrowserUtility {
 	}
 
 	public String getVisibleText(By locator) {
+		logger.info("Finding Element with the locator" + locator);
 		WebElement element = driver.get().findElement(locator);
+		logger.info("Element Found and now returning the visibile " + element.getText());
 		return element.getText();
 	}
 
 	public String getVisibleText(WebElement element) {
+		logger.info("Returning the visibile Text" + element.getText());
 		return element.getText();
 	}
 
 	public List<String> getAllVisibleText(By locator) {
+		logger.info("Finding All Elements with the locator" + locator);
 		List<WebElement> elementList = driver.get().findElements(locator);
+		logger.info("Elements Found and now printing the List of Elements");
 		List<String> visibleTextList = new ArrayList<String>();
 		for (WebElement element : elementList) {
 			visibleTextList.add(getVisibleText(element));
@@ -177,7 +192,9 @@ public abstract class BrowserUtility {
 	}
 
 	public List<WebElement> getAllElements(By locator) {
+		logger.info("Finding All Elements with the locator" + locator);
 		List<WebElement> elementList = driver.get().findElements(locator);
+		logger.info("Elements Found");
 		return elementList;
 	}
 

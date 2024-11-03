@@ -20,7 +20,7 @@ public class LoginTest extends TestBase {
 			dataProviderClass = com.ui.dataproviders.LoginDataProvider.class,dataProvider="LoginTestDataProvider")
 	public void loginTest(UserDetails userDetails) {
 		assertEquals(homePage.goToLoginPage().doLoginWith(userDetails.getEmailAddress(), userDetails.getPassword())
-				.getUserName(), "James Eagl");
+				.getUserName(), "James Eagle");
 		
 	}
 	
