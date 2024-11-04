@@ -61,7 +61,6 @@ jobs:
       run: |
         mkdir -p public/extent-reports
         cp -R report.html public/extent-reports/
-        ls -l
 
     - name: Deploy to github pages
       if: always()
