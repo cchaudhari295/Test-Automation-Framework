@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.utility.BrowserUtility;
 
-public class ShippingPage extends BrowserUtility {
+public final class ShippingPage extends BrowserUtility {
 
 	private static final By ACCEPT_TERMS_CHECKBOX_LOCATOR=By.id("uniform-cgv");
 	private static final By PROCEED_TO_CHECKOUT=By.xpath("//button[@name='processCarrier']");

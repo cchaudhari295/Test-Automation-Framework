@@ -1,6 +1,5 @@
 package com.ui.pages;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.utility.BrowserUtility;
 
-public class SearchResultPage extends BrowserUtility {
+public final class SearchResultPage extends BrowserUtility {
 	private static final By PRODUCT_LISTS_NAME=By.xpath("//*[@itemprop='name']/a[@class='product-name']");
 	private static final By PRODUCT_LISTING_TITLE_LOCATOR=By.xpath("//*[@class='lighter']");
 

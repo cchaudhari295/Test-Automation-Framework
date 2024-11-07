@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import com.ui.pojo.AddressPOJO;
 import com.utility.BrowserUtility;
 
-public class AddressPage extends BrowserUtility{
+public final class AddressPage extends BrowserUtility{
 
 	private static final By COMPANY_TEXT_BOX_LOCATOR=By.id("company");
 	private static final By ADDRESS1_TEXT_BOX_LOCATOR=By.id("address1");

@@ -20,10 +20,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static com.constants.Browser.*;
 
 import com.constants.Browser;
 
@@ -53,12 +53,12 @@ public abstract class BrowserUtility {
 	}
 
 	public BrowserUtility(Browser browserName) {
-		if (browserName == Browser.CHROME) {
+		if (browserName == CHROME) {
 			driver.set(new ChromeDriver());
 			wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
 		}
 
-		else if (browserName == Browser.EDGE) {
+		else if (browserName == EDGE) {
 			driver.set(new EdgeDriver());
 			wait = new WebDriverWait(driver.get(), Duration.ofSeconds(30L));
 		} else {
@@ -67,7 +67,7 @@ public abstract class BrowserUtility {
 	}
 
 	public BrowserUtility(Browser browserName, boolean isHeadless) {
-		if (browserName == Browser.CHROME) {
+		if (browserName == CHROME) {
 			if (isHeadless) {
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless=old");
@@ -82,7 +82,7 @@ public abstract class BrowserUtility {
 			}
 		}
 
-		else if (browserName == Browser.EDGE) {
+		else if (browserName == EDGE) {
 			if (isHeadless) {
 				EdgeOptions options = new EdgeOptions();
 				options.addArguments("--headless=old");

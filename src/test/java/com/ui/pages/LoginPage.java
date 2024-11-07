@@ -1,8 +1,5 @@
 package com.ui.pages;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -42,5 +39,7 @@ public final class LoginPage extends BrowserUtility {
 	public String getErrorMessage() {
 		return getVisibleText(ERROR_MESSAGE_LOCATOR);
 	}
+	
+	
 
 }

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.utility.BrowserUtility;
 
-public class ConfirmAddressPage extends BrowserUtility {
+public final class ConfirmAddressPage extends BrowserUtility {
 
 	private static final By PROCEED_TO_CHECKOUT=By.xpath("//button[@name='processAddress']");
 

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.utility.BrowserUtility;
 
-public class OrderConfirmationPage extends BrowserUtility {
+public final class OrderConfirmationPage extends BrowserUtility {
 
 	private static final By ORDER_CONFIRMATION_MSG_TEXT_LOCATOR=By.xpath("//*[@class='alert alert-success']");
 

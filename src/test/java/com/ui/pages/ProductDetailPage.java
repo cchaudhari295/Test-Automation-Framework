@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import com.ui.tests.TestBase;
 import com.utility.BrowserUtility;
 
-public class ProductDetailPage extends BrowserUtility{
+public final class ProductDetailPage extends BrowserUtility{
 
 	private static final By SIZE_DROPDOWN_LOCATOR=By.id("group_1");
 	private static final By ADD_TO_CART_BUTTON_LOCATOR=By.id("add_to_cart");

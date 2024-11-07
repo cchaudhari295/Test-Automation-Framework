@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.utility.BrowserUtility;
 
-public class ShoppingCartPage extends BrowserUtility {
+public final class ShoppingCartPage extends BrowserUtility {
 
 	private final static By ADDED_PRODUCT_TEXT_LOCATOR=By.xpath("//*[@class='cart_description']/p[@class='product-name']/a");
 	private final static By PROCEED_TO_CHECKOUT_BUTTON_LOCATOR=By.xpath("//a[@class='button btn btn-default standard-checkout button-medium']");
