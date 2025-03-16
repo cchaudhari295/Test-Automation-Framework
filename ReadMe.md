@@ -7,7 +7,7 @@ The framework leverages various libraries and tools to facilitate data-driven te
 
 
 ## 🚀 About Me
-Hi, My Name is Chaitali and I have 6 years of experience in Automation Testing using technologies like Selenium Webdriver, RestAssured. 
+Hi, My Name is Chaitali and I have 10 years of experience in Automation Testing using technologies like Selenium Webdriver, RestAssured. 
 
 
 ## Author
