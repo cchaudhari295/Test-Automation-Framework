@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 17, 2026 07:07:47 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 18, 2026 06:58:17 PM</span></a>
 </li>
 </ul>
 </div>
@@ -80,9 +80,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">loginExcelTestWithInvalidDetails</p>
+            <p class="name">loginExcelTest</p>
             <p class="text-sm">
-              <span>7:08:01 PM</span> / <span>00:00:30:341</span>
+              <span>6:58:21 PM</span> / <span>00:00:30:200</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -90,10 +90,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">loginExcelTestWithInvalidDetails</h5>
-<span class='badge badge-success'>04.17.2026 7:08:01 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-default'>00:00:30:341</span>
+<h5 class="test-status text-skip">loginExcelTest</h5>
+<span class='badge badge-success'>04.18.2026 6:58:21 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:58:51 PM</span>
+<span class='badge badge-default'>00:00:30:200</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -106,9 +106,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>7:08:32 PM</td>
+        <td>6:58:51 PM</td>
         <td>
-          loginExcelTestWithInvalidDetails SKIPPED
+          loginExcelTest SKIPPED
         </td>
       </tr>
   </tbody>
@@ -116,40 +116,60 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">loginExcelTest</p>
+            <p class="name">loginTest</p>
             <p class="text-sm">
-              <span>7:08:01 PM</span> / <span>00:00:30:294</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>6:58:21 PM</span> / <span>00:00:30:233</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">loginExcelTest</h5>
-<span class='badge badge-success'>04.17.2026 7:08:01 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:08:31 PM</span>
-<span class='badge badge-default'>00:00:30:294</span>
+<h5 class="test-status text-fail">loginTest</h5>
+<span class='badge badge-success'>04.18.2026 6:58:21 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:58:51 PM</span>
+<span class='badge badge-default'>00:00:30:233</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/loginTest - 18-58-51.png' src="./screenshots/loginTest - 18-58-51.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>7:08:31 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:58:51 PM</td>
         <td>
-          loginExcelTest SKIPPED
+          loginTest FAILED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:58:51 PM</td>
+        <td>
+          Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Sign in')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42431}, goog:processID: 2713, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42431/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c9b3aa2b512ecacf174e3e638f72e1a
         </td>
       </tr>
   </tbody>
@@ -164,7 +184,7 @@
           <div class="test-detail">
             <p class="name">loginCSVTest</p>
             <p class="text-sm">
-              <span>7:08:01 PM</span> / <span>00:00:30:416</span>
+              <span>6:58:24 PM</span> / <span>00:00:30:227</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -173,9 +193,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">loginCSVTest</h5>
-<span class='badge badge-success'>04.17.2026 7:08:01 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-default'>00:00:30:416</span>
+<span class='badge badge-success'>04.18.2026 6:58:24 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:58:54 PM</span>
+<span class='badge badge-default'>00:00:30:227</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -185,7 +205,7 @@
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='./screenshots/loginCSVTest - 19-08-32.png' src="./screenshots/loginCSVTest - 19-08-32.png">
+<img data-featherlight='./screenshots/loginCSVTest - 18-58-54.png' src="./screenshots/loginCSVTest - 18-58-54.png">
   
     
 
@@ -196,21 +216,21 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:08:32 PM</td>
+        <td>6:58:54 PM</td>
         <td>
           loginCSVTest FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:08:32 PM</td>
+        <td>6:58:54 PM</td>
         <td>
           Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Sign in')] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42503}, goog:processID: 2718, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42503/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 055a01e39214af16bbeb641fb1ae1e73
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41555}, goog:processID: 2724, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41555/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a543907f17a0e2cca36ad97beccf5cab
         </td>
       </tr>
   </tbody>
@@ -218,60 +238,40 @@ Session ID: 055a01e39214af16bbeb641fb1ae1e73
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="skip" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">loginTest</p>
+            <p class="name">loginExcelTestWithInvalidDetails</p>
             <p class="text-sm">
-              <span>7:08:01 PM</span> / <span>00:00:30:062</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>6:58:24 PM</span> / <span>00:00:30:143</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">loginTest</h5>
-<span class='badge badge-success'>04.17.2026 7:08:01 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:08:31 PM</span>
-<span class='badge badge-default'>00:00:30:062</span>
+<h5 class="test-status text-skip">loginExcelTestWithInvalidDetails</h5>
+<span class='badge badge-success'>04.18.2026 6:58:24 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:58:54 PM</span>
+<span class='badge badge-default'>00:00:30:143</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='./screenshots/loginTest - 19-08-31.png' src="./screenshots/loginTest - 19-08-31.png">
-  
-    
-
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:08:31 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:58:54 PM</td>
         <td>
-          loginTest FAILED
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:08:31 PM</td>
-        <td>
-          Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Sign in')] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39211}, goog:processID: 2716, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39211/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 00c2340e330d354d59958d36a7ddca63
+          loginExcelTestWithInvalidDetails SKIPPED
         </td>
       </tr>
   </tbody>
@@ -286,7 +286,7 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
           <div class="test-detail">
             <p class="name">addNewAddress</p>
             <p class="text-sm">
-              <span>7:08:32 PM</span> / <span>00:00:00:001</span>
+              <span>6:58:51 PM</span> / <span>00:00:00:002</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -295,9 +295,9 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">addNewAddress</h5>
-<span class='badge badge-success'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<span class='badge badge-success'>04.18.2026 6:58:51 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:58:51 PM</span>
+<span class='badge badge-default'>00:00:00:002</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -310,7 +310,7 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>7:08:32 PM</td>
+        <td>6:58:51 PM</td>
         <td>
           addNewAddress SKIPPED
         </td>
@@ -327,7 +327,7 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
           <div class="test-detail">
             <p class="name">verifyProductSearchTest</p>
             <p class="text-sm">
-              <span>7:08:32 PM</span> / <span>00:00:00:000</span>
+              <span>6:58:51 PM</span> / <span>00:00:00:001</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -336,9 +336,9 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">verifyProductSearchTest</h5>
-<span class='badge badge-success'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>04.18.2026 6:58:51 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:58:51 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -351,7 +351,7 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>7:08:32 PM</td>
+        <td>6:58:51 PM</td>
         <td>
           verifyProductSearchTest SKIPPED
         </td>
@@ -368,7 +368,7 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
           <div class="test-detail">
             <p class="name">addToCartTest</p>
             <p class="text-sm">
-              <span>7:08:32 PM</span> / <span>00:00:00:002</span>
+              <span>6:58:51 PM</span> / <span>00:00:00:000</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -377,9 +377,9 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">addToCartTest</h5>
-<span class='badge badge-success'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-default'>00:00:00:002</span>
+<span class='badge badge-success'>04.18.2026 6:58:51 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:58:51 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -392,7 +392,7 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>7:08:32 PM</td>
+        <td>6:58:51 PM</td>
         <td>
           addToCartTest SKIPPED
         </td>
@@ -402,75 +402,14 @@ Session ID: 00c2340e330d354d59958d36a7ddca63
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="8"
+        <li class="test-item"  status="skip" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">loginTest</p>
+            <p class="name">loginExcelTest</p>
             <p class="text-sm">
-              <span>7:08:32 PM</span> / <span>00:00:30:476</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">loginTest</h5>
-<span class='badge badge-success'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:09:03 PM</span>
-<span class='badge badge-default'>00:00:30:476</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-    
-
-<img data-featherlight='./screenshots/loginTest - 19-09-03.png' src="./screenshots/loginTest - 19-09-03.png">
-  
-    
-
-    </div></div>
-<div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:09:03 PM</td>
-        <td>
-          loginTest FAILED
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:09:03 PM</td>
-        <td>
-          Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Sign in')] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.25.0', revision: '8a8aea2337'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36753}, goog:processID: 4127, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36753/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 951c473c5ffba3291e7434576ff7caf0
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="skip" test-id="9"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">loginExcelTestWithInvalidDetails</p>
-            <p class="text-sm">
-              <span>7:08:32 PM</span> / <span>00:00:30:455</span>
+              <span>6:58:52 PM</span> / <span>00:00:30:444</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -478,11 +417,11 @@ Session ID: 951c473c5ffba3291e7434576ff7caf0
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">loginExcelTestWithInvalidDetails</h5>
-<span class='badge badge-success'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:09:03 PM</span>
-<span class='badge badge-default'>00:00:30:455</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<h5 class="test-status text-skip">loginExcelTest</h5>
+<span class='badge badge-success'>04.18.2026 6:58:52 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:59:22 PM</span>
+<span class='badge badge-default'>00:00:30:444</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -494,9 +433,70 @@ Session ID: 951c473c5ffba3291e7434576ff7caf0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>7:09:03 PM</td>
+        <td>6:59:22 PM</td>
         <td>
-          loginExcelTestWithInvalidDetails SKIPPED
+          loginExcelTest SKIPPED
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">loginTest</p>
+            <p class="text-sm">
+              <span>6:58:52 PM</span> / <span>00:00:30:436</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">loginTest</h5>
+<span class='badge badge-success'>04.18.2026 6:58:52 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:59:22 PM</span>
+<span class='badge badge-default'>00:00:30:436</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+    
+
+<img data-featherlight='./screenshots/loginTest - 18-59-22.png' src="./screenshots/loginTest - 18-59-22.png">
+  
+    
+
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:59:22 PM</td>
+        <td>
+          loginTest FAILED
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:59:22 PM</td>
+        <td>
+          Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Sign in')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46879}, goog:processID: 4186, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46879/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3e3e33332e0a598cf9ba11299b8128b6
         </td>
       </tr>
   </tbody>
@@ -509,9 +509,9 @@ Session ID: 951c473c5ffba3291e7434576ff7caf0
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">loginExcelTest</p>
+            <p class="name">loginExcelTestWithInvalidDetails</p>
             <p class="text-sm">
-              <span>7:08:32 PM</span> / <span>00:00:30:490</span>
+              <span>6:58:54 PM</span> / <span>00:00:30:456</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -519,10 +519,10 @@ Session ID: 951c473c5ffba3291e7434576ff7caf0
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">loginExcelTest</h5>
-<span class='badge badge-success'>04.17.2026 7:08:32 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:09:03 PM</span>
-<span class='badge badge-default'>00:00:30:490</span>
+<h5 class="test-status text-fail">loginExcelTestWithInvalidDetails</h5>
+<span class='badge badge-success'>04.18.2026 6:58:54 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:59:25 PM</span>
+<span class='badge badge-default'>00:00:30:456</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -532,7 +532,7 @@ Session ID: 951c473c5ffba3291e7434576ff7caf0
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='./screenshots/loginExcelTest - 19-09-03.png' src="./screenshots/loginExcelTest - 19-09-03.png">
+<img data-featherlight='./screenshots/loginExcelTestWithInvalidDetails - 18-59-25.png' src="./screenshots/loginExcelTestWithInvalidDetails - 18-59-25.png">
   
     
 
@@ -543,21 +543,21 @@ Session ID: 951c473c5ffba3291e7434576ff7caf0
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:09:03 PM</td>
+        <td>6:59:25 PM</td>
         <td>
-          loginExcelTest FAILED
+          loginExcelTestWithInvalidDetails FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:09:03 PM</td>
+        <td>6:59:25 PM</td>
         <td>
           Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Sign in')] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46409}, goog:processID: 4249, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46409/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d387b82b5fcab4f97daf42006a128819
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42105}, goog:processID: 4460, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:42105/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fbd11289a7367c145c550484d90e6ea7
         </td>
       </tr>
   </tbody>
@@ -570,9 +570,9 @@ Session ID: d387b82b5fcab4f97daf42006a128819
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">loginExcelTestWithInvalidDetails</p>
+            <p class="name">loginExcelTest</p>
             <p class="text-sm">
-              <span>7:09:03 PM</span> / <span>00:00:30:385</span>
+              <span>6:59:23 PM</span> / <span>00:00:30:316</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -580,10 +580,10 @@ Session ID: d387b82b5fcab4f97daf42006a128819
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">loginExcelTestWithInvalidDetails</h5>
-<span class='badge badge-success'>04.17.2026 7:09:03 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:09:34 PM</span>
-<span class='badge badge-default'>00:00:30:385</span>
+<h5 class="test-status text-fail">loginExcelTest</h5>
+<span class='badge badge-success'>04.18.2026 6:59:23 PM</span>
+<span class='badge badge-danger'>04.18.2026 6:59:53 PM</span>
+<span class='badge badge-default'>00:00:30:316</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -593,7 +593,7 @@ Session ID: d387b82b5fcab4f97daf42006a128819
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='./screenshots/loginExcelTestWithInvalidDetails - 19-09-34.png' src="./screenshots/loginExcelTestWithInvalidDetails - 19-09-34.png">
+<img data-featherlight='./screenshots/loginExcelTest - 18-59-53.png' src="./screenshots/loginExcelTest - 18-59-53.png">
   
     
 
@@ -604,21 +604,21 @@ Session ID: d387b82b5fcab4f97daf42006a128819
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:09:34 PM</td>
+        <td>6:59:53 PM</td>
         <td>
-          loginExcelTestWithInvalidDetails FAILED
+          loginExcelTest FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:09:34 PM</td>
+        <td>6:59:53 PM</td>
         <td>
           Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Sign in')] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40917}, goog:processID: 5257, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40917/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e02aa03d463279ca20c8ec97e017ce90
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41223}, goog:processID: 5126, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:41223/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74da2ddcca0111d5f0167371ec8bdd16
         </td>
       </tr>
   </tbody>
@@ -633,7 +633,7 @@ Session ID: e02aa03d463279ca20c8ec97e017ce90
           <div class="test-detail">
             <p class="name">loginExcelTest</p>
             <p class="text-sm">
-              <span>7:09:04 PM</span> / <span>00:00:30:371</span>
+              <span>6:59:53 PM</span> / <span>00:00:30:312</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -642,9 +642,9 @@ Session ID: e02aa03d463279ca20c8ec97e017ce90
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">loginExcelTest</h5>
-<span class='badge badge-success'>04.17.2026 7:09:04 PM</span>
-<span class='badge badge-danger'>04.17.2026 7:09:34 PM</span>
-<span class='badge badge-default'>00:00:30:371</span>
+<span class='badge badge-success'>04.18.2026 6:59:53 PM</span>
+<span class='badge badge-danger'>04.18.2026 7:00:24 PM</span>
+<span class='badge badge-default'>00:00:30:312</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -654,7 +654,7 @@ Session ID: e02aa03d463279ca20c8ec97e017ce90
 </div>    <div class="row mb-3"><div class="col-md-3">
     
 
-<img data-featherlight='./screenshots/loginExcelTest - 19-09-34.png' src="./screenshots/loginExcelTest - 19-09-34.png">
+<img data-featherlight='./screenshots/loginExcelTest - 19-00-24.png' src="./screenshots/loginExcelTest - 19-00-24.png">
   
     
 
@@ -665,21 +665,21 @@ Session ID: e02aa03d463279ca20c8ec97e017ce90
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:09:34 PM</td>
+        <td>7:00:24 PM</td>
         <td>
           loginExcelTest FAILED
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>7:09:34 PM</td>
+        <td>7:00:24 PM</td>
         <td>
           Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(),'Sign in')] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.25.0', revision: '8a8aea2337'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.17.0-1010-azure', java.version: '17.0.18'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38525}, goog:processID: 5286, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38525/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 93633a664c13ff7b98091de6185fabc1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.55, chrome: {chromedriverVersion: 147.0.7727.56 (b28eac7a1a97..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34897}, goog:processID: 5618, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34897/devtoo..., se:cdpVersion: 147.0.7727.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d740ffbfe3696b9e68bfadd9c39128da
         </td>
       </tr>
   </tbody>
@@ -701,13 +701,13 @@ Session ID: 93633a664c13ff7b98091de6185fabc1
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 17, 2026 07:07:47 PM</h3>
+<h3>Apr 18, 2026 06:58:17 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 17, 2026 07:09:34 PM</h3>
+<h3>Apr 18, 2026 07:00:24 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -777,7 +777,7 @@ Session ID: 93633a664c13ff7b98091de6185fabc1
 </div></div>
 <script>
 var timeline = {
-"loginExcelTestWithInvalidDetails":30.341,"loginExcelTest":30.294,"loginCSVTest":30.416,"loginTest":30.062,"addNewAddress":0.001,"verifyProductSearchTest":0,"addToCartTest":0.002,"loginTest":30.476,"loginExcelTestWithInvalidDetails":30.455,"loginExcelTest":30.49,"loginExcelTestWithInvalidDetails":30.385,"loginExcelTest":30.371
+"loginExcelTest":30.2,"loginTest":30.233,"loginCSVTest":30.227,"loginExcelTestWithInvalidDetails":30.143,"addNewAddress":0.002,"verifyProductSearchTest":0.001,"addToCartTest":0,"loginExcelTest":30.444,"loginTest":30.436,"loginExcelTestWithInvalidDetails":30.456,"loginExcelTest":30.316,"loginExcelTest":30.312
 };
 </script>
 <div class="row">
